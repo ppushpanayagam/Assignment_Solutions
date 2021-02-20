@@ -18,7 +18,9 @@ public class homePage extends reusbaleMethods {
     }
     public homePage clickTshirtImage(){
         clickButtonbyXpath(prop.getProperty("HomePage_Click_Tshirt_Image"));
+        switchToFrame();
         clickButtonbyXpath(prop.getProperty("HomePage_Click_Form_AddToCartButton"));
+        switchTodefaultContent();
         return this;
     }
     public homePage clickAddToCartButton(){
@@ -54,7 +56,7 @@ public class homePage extends reusbaleMethods {
         return this;
     }
     public homePage clickProceedToCheckOutButtonInShippingSection(){
-        clickButtonbyXpath(prop.getProperty("HomePage_ShippingsSection_Click_ProceedToCheckOut_Button"));
+        clickButtonByName(prop.getProperty("HomePage_ShippingsSection_Click_ProceedToCheckOut_Button"));
         return this;
     }
     public homePage clickBankWireOptionInShippingSection(){
