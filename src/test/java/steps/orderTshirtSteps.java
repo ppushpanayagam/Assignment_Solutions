@@ -28,14 +28,13 @@ public class orderTshirtSteps {
     @When("the User Order a Tshirt as a existing user")
     public void the_user_order_a_tshirt_as_a_existing_user() {
             new homePage()
-                    .verifyHomePage()
                     .clickTshirtLink()
                     .clickTshirtImage()
-                    .clickAddToCartButton()
                     .clickProceedToCheckOutButton()
                     .clickProceedToCheckOutButtonInSummarySection()
                     .clickProceedToCheckOutButtonInAddressSection()
                     .clickCheckBox()
+                    .clickProceedToCheckOutButtonInShippingSection()
                     .clickBankWireOptionInShippingSection()
                     .clickConfirmOrderInShippingSection();
     }
