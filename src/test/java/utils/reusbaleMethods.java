@@ -55,6 +55,15 @@ public class reusbaleMethods {
         WebElement element2 = driver.findElement(By.xpath(locator1));
         action.moveToElement(element).moveToElement(element2).build();
     }
+    public void clickButtonByName(String locator){
+        driver.findElement(By.name(locator)).click();
+    }
+    public void switchToFrame(){
+        driver.switchTo().frame(0);
+    }
+    public void switchTodefaultContent(){
+        driver.switchTo().defaultContent();
+    }
     public void quitDriver(){
         driver.close();
         driver.quit();
